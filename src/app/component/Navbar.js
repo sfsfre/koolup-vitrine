@@ -14,7 +14,6 @@ const Navbar = () => {
 
   const groupStyle = {
     width: '441px',
-    height: '25px',
     top: '27px',
     left: '58px',
     display: 'flex',
@@ -76,7 +75,7 @@ const Navbar = () => {
 
   const signInButtonStyle = {
     width: '103px',
-    height: '38px',
+    height: '40px',
     top: '21px',
     left: '1305px',
     padding: '7px 25px 7px 25px',
