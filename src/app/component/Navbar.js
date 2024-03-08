@@ -1,16 +1,15 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 const Navbar = () => {
   const NavbarStyle = {
-    width: '1440px',
-    height: '80px',
+    width: '98%',
+    height: '100%', // Définir la hauteur de la navbar ici
     background: 'rgba(255, 255, 255, 1)',
     boxShadow: '0px 2px 2px 0px rgba(0, 0, 0, 0.25)',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '0 20px', // You can adjust the padding as needed
+    padding: '20px', // Vous pouvez ajuster le padding selon vos besoins
   };
 
   const groupStyle = {
@@ -55,6 +54,12 @@ const Navbar = () => {
     // alignItems: 'center',
   };
 
+  const linkStyle = {
+    color: 'rgba(52, 23, 72, 1)',
+    textDecoration: 'none', // Remove the underline
+    cursor: 'pointer',
+  };
+
   const icon1Style = {
     width: '21.33px',
     height: '19.91px',
@@ -79,7 +84,7 @@ const Navbar = () => {
     border: '1px solid rgba(226, 112, 61, 1)',
     gap: '10px',
     color: 'rgba(226, 112, 61, 1)',
-    // textDecoration: 'none',
+     textDecoration: 'none',
     // display: 'flex',
     // alignItems: 'center',
   };
@@ -88,16 +93,16 @@ const Navbar = () => {
     <div style={NavbarStyle} className="top-bar">
       <div style={groupStyle}>
         <Link href="/">
-          <span style={spanStyle}>Home</span>
+          <span style={{ ...spanStyle, ...linkStyle }}>Home</span>
         </Link>
         <Link href="/about">
-          <span style={spanStyle}>About Us</span>
+          <span style={{ ...spanStyle, ...linkStyle }}>About Us</span>
         </Link>
         <Link href="/restaurants">
-          <span style={spanStyle}>Restaurants</span>
+          <span style={{ ...spanStyle, ...linkStyle }}>Restaurants</span>
         </Link>
         <Link href="/contact">
-          <span style={spanStyle}>Contact Us</span>
+          <span style={{ ...spanStyle, ...linkStyle }}>Contact Us</span>
         </Link>
       </div>
      <div>

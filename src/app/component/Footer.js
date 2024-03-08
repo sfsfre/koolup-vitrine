@@ -8,7 +8,7 @@ const Footer = () => {
         {/* ... Autres sections du pied de page */}
         <div >
           
-          <img src="/footer.png"  style={{ width: '1479px', height: '555px', top: '6011px' }} />
+          <img src="/footer.png"  style={{ width: '100%', height: '50%', top: '10%' }} />
         </div>
       </div>
       {/* <div className="footer-bottom">
