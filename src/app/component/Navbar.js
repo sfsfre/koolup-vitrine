@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Navbar = () => {
   const NavbarStyle = {
-    width: '98%',
+    width: '100%',
     height: '100%', // Définir la hauteur de la navbar ici
     background: 'rgba(255, 255, 255, 1)',
     boxShadow: '0px 2px 2px 0px rgba(0, 0, 0, 0.25)',
@@ -94,7 +94,7 @@ const Navbar = () => {
         <Link href="/">
           <span style={{ ...spanStyle, ...linkStyle }}>Home</span>
         </Link>
-        <Link href="/about">
+        <Link href="/aboutus">
           <span style={{ ...spanStyle, ...linkStyle }}>About Us</span>
         </Link>
         <Link href="/restaurants">
