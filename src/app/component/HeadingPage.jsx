@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import React from 'react';
 
 const HeadingPage = () => {
@@ -50,3 +49,4 @@ Dining Experience</h1>
 };
 
 export default HeadingPage;
+

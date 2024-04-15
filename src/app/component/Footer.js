@@ -36,7 +36,7 @@ const Footer = () => {
                 className="text-white px-3 py-2 rounded-l mb-2"
                 style={{ background: 'rgba(226, 112, 61, 1)'}}
               >
-                Send
+                 &gt;
               </button>
             </div>
           </div>

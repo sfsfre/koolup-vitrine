@@ -1,6 +1,8 @@
 import React from 'react';
 import Rectangle from '../component/Rectangle';
-
+import Delivery from '../component/Delivery';
+import Telephone from '../component/Telephone';
+import Client1 from '../component/Client1';
 const AboutUs = () => {
     return (
         <div> 
@@ -34,7 +36,9 @@ const AboutUs = () => {
 <div className="flex justify-center" >
       <img src="/adham.png" alt="Logo" className=" py-20 top-10 " />
     </div>
-
+<div><Delivery/></div>
+<div><Telephone/></div>
+<div><Client1/></div>
 
 </div>
 

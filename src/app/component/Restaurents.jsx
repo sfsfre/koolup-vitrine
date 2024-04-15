@@ -126,7 +126,7 @@ const Restaurants = () => {
 
       <div className="flex justify-center mt-8 p-24 ">
         <button className=" py-8 px-6 text-orange-500  text-xl font-bold " style={{ background: 'rgba(255, 242, 232, 1)' ,borderRadius:'25px' }}>
-          Explore more places  
+          Explore more places   &gt;
         </button>
       </div>
     </div>

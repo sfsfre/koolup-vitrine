@@ -97,7 +97,7 @@ const Navbar = () => {
         <Link href="/aboutus">
           <span style={{ ...spanStyle, ...linkStyle }}>About Us</span>
         </Link>
-        <Link href="/restaurants">
+        <Link href="/restaurentpage">
           <span style={{ ...spanStyle, ...linkStyle }}>Restaurants</span>
         </Link>
         <Link href="/contact">
