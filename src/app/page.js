@@ -9,6 +9,7 @@ import Restaurants from './component/Restaurents';
 import Delivery from './component/Delivery';
 import Telephone from './component/Telephone';
 import Client from './component/Client';
+import Subscribe from './component/Subscribe';
 
 const Page = () => {
   return (
@@ -21,7 +22,7 @@ const Page = () => {
        <Delivery/>
        <Telephone/>
        <Client/>
-    
+   <Subscribe/>
 
     </div>
   );

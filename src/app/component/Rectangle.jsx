@@ -4,7 +4,7 @@ const Rectangle = () => {
 
 
   return (
-    <div className="  flex text-white h-64"  style={{ background: 'rgba(52, 23, 72, 1)' }}>
+    <div className="  flex text-white  top-96 h-56 "  style={{ background: 'rgba(52, 23, 72, 1)' }}>
       <div className=" w-full grid grid-cols-4 items-center text-white" style={{ background: 'rgba(52, 23, 72, 1)' }}>
   <div className="flex-col text-center">
     <p className="text-8xl">99+</p>

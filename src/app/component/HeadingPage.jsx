@@ -40,7 +40,7 @@ Dining Experience</h1>
 
 
       {/* Right Part */}
-      <div className="w-1/2 p-4"  style={{paddingRight: '6%', justifyContent: 'center'}}>
+      <div className="w-1/2 p-2"  style={{paddingRight: '6%', justifyContent: 'center'}}>
         <img src='/Frame.png' alt="Second Image" className='mx-auto' />
       </div>
     </div>

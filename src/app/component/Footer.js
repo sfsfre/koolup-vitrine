@@ -33,7 +33,7 @@ const Footer = () => {
                 style={{ width: 'calc(90% - 40px)', background: 'rgba(52, 23, 72, 1)' }}
               />
               <button
-                className="text-white px-3 py-2 rounded-l mb-2"
+                className="text-white px-3 py-2 rounded-r-lg mb-2"
                 style={{ background: 'rgba(226, 112, 61, 1)'}}
               >
                  &gt;

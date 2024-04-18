@@ -3,6 +3,7 @@ import Rectangle from '../component/Rectangle';
 import Delivery from '../component/Delivery';
 import Telephone from '../component/Telephone';
 import Client1 from '../component/Client1';
+import Subscribe from '../component/Subscribe';
 const AboutUs = () => {
     return (
         <div> 
@@ -36,12 +37,12 @@ const AboutUs = () => {
 <div className="flex justify-center" >
       <img src="/adham.png" alt="Logo" className=" py-20 top-10 " />
     </div>
-<div><Delivery/></div>
-<div><Telephone/></div>
-<div><Client1/></div>
+<Delivery/>
+<Telephone/>
+<Client1/>
+<Subscribe/>
 
 </div>
-
       );
     };
     
