@@ -6,7 +6,7 @@ const Restaurant = ({ name, address, logo, link, rating }) => (
   <div className="max-w-md mx-auto shadow-lg p-8 mb-8 bg-white">
     <img src={logo} alt={`${name} logo`} className="w-full mb-4" />
     <fonction> Dining & Delivery
-</fonction>
+    </fonction>
     <h2 className="text-2xl font-bold mb-2">{name}</h2>
     <p className="text-gray-700">{address}</p>
     <div className="flex items-center mt-2">

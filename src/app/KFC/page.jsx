@@ -2,6 +2,7 @@ import React from 'react';
 import SidebarResto from '../component/sidebarResto';
 import Subscribe from '../component/Subscribe';
 import SearchIcon from '@mui/icons-material/Search';
+import CarteFood from '../component/CarteFood';
 
 const page = () => {
     const handleSearch = () => {
@@ -19,32 +20,185 @@ const page = () => {
                 </div>
             </div>
             <div className="flex justify-normal ">
-                <div className="  flex relative py-14  w-1/3   " ><SidebarResto /></div>
+                <div className="flex relative py-14  w-1/3" ><SidebarResto /></div>
                 
-
-                <div className="flex items-center justify-center  w-2/3">
-                    <input
+                        {/* <input
                         type="text"
                         placeholder="Rechercher..."
                         className="w-full border-orange-400  rounded-l-3xl  ml-4  px-3 py-1 mb-4 bg-orange-400 bg-opacity-20"
                         onChange={handleSearch()}
-                        
-                        />
-                    <button
+                         /> */}
+
+                <div>
+                 <button
                         className="text-white px-3 py-1 rounded-r-3xl mb-4 mr-1"
                         style={{ background: 'rgba(226, 112, 61, 1)' }}
                         >
                         <SearchIcon />
                     </button>
+                    <div className="grid grid-cols-2  gap-6">
+    {/* Carte 1 */}
+    <div className="flex items-center bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img className="object-cover w-48 h-48 rounded-l-lg md:w-48 md:h-auto md:rounded-none md:rounded-tl-lg" src="/tower.png" alt="" />
+        
+        <div className="flex flex-col p-3 leading-normal">
+            <h5 className="mb-1 font-bold tracking-tight text-gray-900 dark:text-white">Tower Burger Menu</h5>
+            <p className="mb-2  text-gray-700 dark:text-gray-400">2 filets de poulets épicés, 2 onion rings, laitue, fromage cheddar, sauce chili, sauce mayonnaise, 1 large frite, canette au choix</p>
+        </div>
+    </div>
+    {/* Carte 2 */}
+    <div className="flex items-center bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img className="object-cover w-48 h-48 rounded-l-lg md:w-48 md:h-auto md:rounded-none md:rounded-tl-lg" src="/zinger.png" alt="" />
+        <div className="flex flex-col p-4 leading-normal">
+            <h5 className="mb-2  font-bold tracking-tight text-gray-900 dark:text-white">Mighty Zinger Menu</h5>
+            <p className="mb-3  text-gray-700 dark:text-gray-400">2 filets de poulet épicés, laitue, fromage cheddar, sauce chili, sauce mayonnaise, 1 moyenne frite, canette au choix</p>
+        </div>
+        
+    </div>
+    <div className="flex items-center bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img className="object-cover w-48 h-48 rounded-l-lg md:w-48 md:h-auto md:rounded-none md:rounded-tl-lg" src="/3.png" alt="" />
+        <div className="flex flex-col p-4 leading-normal">
+            <h5 className="mb-2  font-bold tracking-tight text-gray-900 dark:text-white">Tower Burger</h5>
+            <p className="mb-3  text-gray-700 dark:text-gray-400">2 filets de poulet épicés, 2 onion rings, laitue, fromage cheddar, sauce chili, sauce mayonnaise.</p>
+        </div>
+        
+    </div>
+    <div className="flex items-center bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img className="object-cover w-48 h-48 rounded-l-lg md:w-48 md:h-auto md:rounded-none md:rounded-tl-lg" src="/4.png" alt="" />
+        <div className="flex flex-col p-4 leading-normal">
+            <h5 className="mb-2  font-bold tracking-tight text-gray-900 dark:text-white">Tower Burger Menu</h5>
+            <p className="mb-3  text-gray-700 dark:text-gray-400">2 filets de poulet épicés, 2 onion rings, laitue, fromage cheddar, sauce chili, sauce mayonnaise.</p>
+        </div>
+        
+    </div>
+    <div className="flex items-center bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img className="object-cover w-48 h-48 rounded-l-lg md:w-48 md:h-auto md:rounded-none md:rounded-tl-lg" src="/5.png" alt="" />
+        <div className="flex flex-col p-4 leading-normal">
+            <h5 className="mb-2  font-bold tracking-tight text-gray-900 dark:text-white">Shot's N Wings Snacker</h5>
+            <p className="mb-3  text-gray-700 dark:text-gray-400">2 filets de poulet épicés, 2 onion rings, laitue, fromage cheddar, sauce chili, sauce mayonnaise.</p>
+        </div>
+        
+    </div>
+    <div className="flex items-center bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img className="object-cover w-48 h-48 rounded-l-lg md:w-48 md:h-auto md:rounded-none md:rounded-tl-lg" src="/6.png" alt="" />
+        <div className="flex flex-col p-4 leading-normal">
+            <h5 className="mb-2  font-bold tracking-tight text-gray-900 dark:text-white">Shot's N Wings Snacker</h5>
+            <p className="mb-3  text-gray-700 dark:text-gray-400">2 filets de poulet épicés, 2 onion rings, laitue, fromage cheddar, sauce chili, sauce mayonnaise.</p>
+        </div>
+        
+    </div>
+    <div className="flex items-center bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img className="object-cover w-48 h-48 rounded-l-lg md:w-48 md:h-auto md:rounded-none md:rounded-tl-lg" src="/4.png" alt="" />
+        <div className="flex flex-col p-4 leading-normal">
+            <h5 className="mb-2  font-bold tracking-tight text-gray-900 dark:text-white">Shot's N Wings Snacker</h5>
+            <p className="mb-3  text-gray-700 dark:text-gray-400">2 filets de poulet épicés, 2 onion rings, laitue, fromage cheddar, sauce chili, sauce mayonnaise.</p>
+        </div>
+        
+    </div>
+    <div className="flex items-center bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img className="object-cover w-48 h-48 rounded-l-lg md:w-48 md:h-auto md:rounded-none md:rounded-tl-lg" src="/8.png" alt="" />
+        <div className="flex flex-col p-4 leading-normal">
+            <h5 className="mb-2  font-bold tracking-tight text-gray-900 dark:text-white">Strips 3pcs</h5>
+            <p className="mb-3  text-gray-700 dark:text-gray-400">2 filets de poulet épicés, 2 onion rings, laitue, fromage cheddar, sauce chili, sauce mayonnaise.</p>
+        </div>
+        
+    </div>
+    <div className="flex items-center bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img className="object-cover w-48 h-48 rounded-l-lg md:w-48 md:h-auto md:rounded-none md:rounded-tl-lg" src="/9.png" alt="" />
+        <div className="flex flex-col p-4 leading-normal">
+            <h5 className="mb-2  font-bold tracking-tight text-gray-900 dark:text-white">Onion Rings</h5>
+            <p className="mb-3  text-gray-700 dark:text-gray-400">2 filets de poulet épicés, 2 onion rings, laitue, fromage cheddar, sauce chili, sauce mayonnaise.</p>
+        </div>
+        
+    </div>
+    <div className="flex items-center bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img className="object-cover w-48 h-48 rounded-l-lg md:w-48 md:h-auto md:rounded-none md:rounded-tl-lg" src="/100.png" alt="" />
+        <div className="flex flex-col p-4 leading-normal">
+            <h5 className="mb-2  font-bold tracking-tight text-gray-900 dark:text-white">Hot Wings 10 Pieces</h5>
+            <p className="mb-3  text-gray-700 dark:text-gray-400">2 filets de poulet épicés, 2 onion rings, laitue, fromage cheddar, sauce chili, sauce mayonnaise.</p>
+        </div>
+        
+    </div>
+    <div className="flex items-center bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img className="object-cover w-48 h-48 rounded-l-lg md:w-48 md:h-auto md:rounded-none md:rounded-tl-lg" src="/11.png" alt="" />
+        <div className="flex flex-col p-4 leading-normal">
+            <h5 className="mb-2  font-bold tracking-tight text-gray-900 dark:text-white">Frites Large</h5>
+            <p className="mb-3  text-gray-700 dark:text-gray-400">2 filets de poulet épicés, 2 onion rings, laitue, fromage cheddar, sauce chili, sauce mayonnaise.</p>
+        </div>
+        
+    </div>
+    <div className="flex items-center bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img className="object-cover w-48 h-48 rounded-l-lg md:w-48 md:h-auto md:rounded-none md:rounded-tl-lg" src="/11.png" alt="" />
+        <div className="flex flex-col p-4 leading-normal">
+            <h5 className="mb-2  font-bold tracking-tight text-gray-900 dark:text-white">Frites Medium</h5>
+            <p className="mb-3  text-gray-700 dark:text-gray-400">2 filets de poulet épicés, 2 onion rings, laitue, fromage cheddar, sauce chili, sauce mayonnaise.</p>
+        </div>
+        
+    </div>
+    <div className="flex items-center bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img className="object-cover w-48 h-48 rounded-l-lg md:w-48 md:h-auto md:rounded-none md:rounded-tl-lg" src="/cola.png" alt="" />
+        <div className="flex flex-col p-4 leading-normal">
+            <h5 className="mb-2  font-bold tracking-tight text-gray-900 dark:text-white">Coca_Cola 24cl</h5>
+            <p className="mb-3  text-gray-700 dark:text-gray-400">2 filets de poulet épicés, 2 onion rings, laitue, fromage cheddar, sauce chili, sauce mayonnaise.</p>
+        </div>
+        
+    </div>
+    <div className="flex items-center bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img className="object-cover w-48 h-48 rounded-l-lg md:w-48 md:h-auto md:rounded-none md:rounded-tl-lg" src="/13.png" alt="" />
+        <div className="flex flex-col p-4 leading-normal">
+            <h5 className="mb-2  font-bold tracking-tight text-gray-900 dark:text-white">Boga Lime 24cl</h5>
+            <p className="mb-3  text-gray-700 dark:text-gray-400">2 filets de poulet épicés, 2 onion rings, laitue, fromage cheddar, sauce chili, sauce mayonnaise.</p>
+        </div>
+        
+    </div>
+    <div className="flex items-center bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img className="object-cover w-48 h-48 rounded-l-lg md:w-48 md:h-auto md:rounded-none md:rounded-tl-lg" src="/fanta.png" alt="" />
+        <div className="flex flex-col p-4 leading-normal">
+            <h5 className="mb-2  font-bold tracking-tight text-gray-900 dark:text-white">Fanta Orange 24cl</h5>
+            <p className="mb-3  text-gray-700 dark:text-gray-400">2 filets de poulet épicés, 2 onion rings, laitue, fromage cheddar, sauce chili, sauce mayonnaise.</p>
+        </div>
+        
+    </div>
+    <div className="flex items-center bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img className="object-cover w-48 h-48 rounded-l-lg md:w-48 md:h-auto md:rounded-none md:rounded-tl-lg" src="/eau.png" alt="" />
+        <div className="flex flex-col p-4 leading-normal">
+            <h5 className="mb-2  font-bold tracking-tight text-gray-900 dark:text-white">Eau 0.5L</h5>
+            <p className="mb-3  text-gray-700 dark:text-gray-400">2 filets de poulet épicés, 2 onion rings, laitue, fromage cheddar, sauce chili, sauce mayonnaise.</p>
+        </div>
+        
+    </div>
+    <nav aria-label="Page navigation example">
+  <ul  className=" flex -space-x-p m-10  px-72  py-5 text-2xl    ">
+    <li>
+      <a href="#"  className="flex items-center justify-center px-3 h-8 leading-tight text-orange-500 bg-white  hover:bg-orange-300 hover:text-white  dark:hover:text-white   rounded-xl"> &lt;Previous </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-orange-500 bg-white  hover:bg-orange-300 hover:text-white  dark:hover:text-white   rounded-xl">1</a>
+    </li>
+    <li>
+      <a href="#" class=" flex items-center justify-center px-3 h-8 text-white  bg-orange-500 hover:bg-orange-300   rounded-xl">2</a>
+    </li>
+    <li>
+      <a href="#" aria-current="page" class="flex items-center justify-center px-3 h-8 leading-tight text-orange-500 bg-white  hover:bg-orange-300 hover:text-white  dark:hover:text-white  rounded-xl">3</a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-orange-500 bg-white  hover:bg-orange-300 hover:text-white  dark:hover:text-white  rounded-xl">4</a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-orange-500 bg-white  hover:bg-orange-300 hover:text-white  dark:hover:text-white  rounded-xl">5</a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-orange-500 bg-white  hover:bg-orange-300 hover:text-white  dark:hover:text-white   rounded-xl">Next  &gt;</a>
+    </li>
+  </ul>
+</nav>
+
+                    </div>
                 </div>
+                
             </div>
-            
-
-
-
-            {/* <Subscribe/> */}
-      
-            </div>
+            <Subscribe />
+        </div>
 
     );
 }
