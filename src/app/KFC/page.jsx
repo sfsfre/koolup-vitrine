@@ -2,7 +2,7 @@ import React from 'react';
 import SidebarResto from '../component/sidebarResto';
 import Subscribe from '../component/Subscribe';
 import SearchIcon from '@mui/icons-material/Search';
-import CarteFood from '../component/CarteFood';
+import Pagination from '../component/Pagination';
 
 const page = () => {
     const handleSearch = () => {
@@ -20,23 +20,26 @@ const page = () => {
                 </div>
             </div>
             <div className="flex justify-normal ">
-                <div className="flex relative py-14  w-1/3" ><SidebarResto /></div>
+                <div className="flex relative py-14  w-1/2" ><SidebarResto /></div>
                 
-                        {/* <input
+                
+                    <div className="grid grid-cols-2  gap-6">
+                    <div className=" flex w-full pt-32">
+                    <input
                         type="text"
                         placeholder="Rechercher..."
-                        className="w-full border-orange-400  rounded-l-3xl  ml-4  px-3 py-1 mb-4 bg-orange-400 bg-opacity-20"
+                        className="w-full border-orange-400  rounded-l-3xl  ml-4  px-3  mb-4 bg-orange-400 bg-opacity-20 "
                         onChange={handleSearch()}
-                         /> */}
+                         />
 
-                <div>
+                
                  <button
-                        className="text-white px-3 py-1 rounded-r-3xl mb-4 mr-1"
+                        className="text-white px-3 py-1 rounded-r-3xl mb-4 mr-1 "
                         style={{ background: 'rgba(226, 112, 61, 1)' }}
                         >
                         <SearchIcon />
                     </button>
-                    <div className="grid grid-cols-2  gap-6">
+                    </div>
     {/* Carte 1 */}
     <div className="flex items-center bg-white border border-gray-200 rounded-3xl shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
         <img className="object-cover w-48 h-48 rounded-l-lg md:w-48 md:h-auto md:rounded-none md:rounded-tl-lg" src="/tower.png" alt="" />
@@ -167,38 +170,15 @@ const page = () => {
         </div>
         
     </div>
-    <nav aria-label="Page navigation example">
-  <ul  className=" flex -space-x-p m-10  px-72  py-5 text-2xl    ">
-    <li>
-      <a href="#"  className="flex items-center justify-center px-3 h-8 leading-tight text-orange-500 bg-white  hover:bg-orange-300 hover:text-white  dark:hover:text-white   rounded-xl"> &lt;Previous </a>
-    </li>
-    <li>
-      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-orange-500 bg-white  hover:bg-orange-300 hover:text-white  dark:hover:text-white   rounded-xl">1</a>
-    </li>
-    <li>
-      <a href="#" class=" flex items-center justify-center px-3 h-8 text-white  bg-orange-500 hover:bg-orange-300   rounded-xl">2</a>
-    </li>
-    <li>
-      <a href="#" aria-current="page" class="flex items-center justify-center px-3 h-8 leading-tight text-orange-500 bg-white  hover:bg-orange-300 hover:text-white  dark:hover:text-white  rounded-xl">3</a>
-    </li>
-    <li>
-      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-orange-500 bg-white  hover:bg-orange-300 hover:text-white  dark:hover:text-white  rounded-xl">4</a>
-    </li>
-    <li>
-      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-orange-500 bg-white  hover:bg-orange-300 hover:text-white  dark:hover:text-white  rounded-xl">5</a>
-    </li>
-    <li>
-      <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-orange-500 bg-white  hover:bg-orange-300 hover:text-white  dark:hover:text-white   rounded-xl">Next  &gt;</a>
-    </li>
-  </ul>
-</nav>
+   
 
                     </div>
                 </div>
-                
+                <Pagination/>
+                <Subscribe />
             </div>
-            <Subscribe />
-        </div>
+            
+        
 
     );
 }

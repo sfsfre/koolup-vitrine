@@ -13,10 +13,10 @@ const SidebarResto = () => {
      
         <div class="p-5 mt-6 ">
           {/* Ajoutez ici votre boîte de recherche */}
-          <h2 className="text-lg font-semibold mb-4 ">Popular filtres</h2>
+          <h2 className=" ">Popular filtres</h2>
           {/* Ajoutez ici vos filtres populaires */}
 
-          <ul class="flex flex-col space-y-4 ...">
+          <ul class="flex  space-y-4 ...">
             <li className="flex">
               <img src="/iconSandwich.png" alt="Sandwiches" className="mr-2 w-6 h-6" />
               <a href="#">Sandwiches</a>
