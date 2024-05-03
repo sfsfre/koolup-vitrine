@@ -16,7 +16,8 @@ const Texte = () => {
 </p>
 
   <button
-          className="py-4 px-6  text-white   text-xl " style={{borderRadius:'25px'}}>About us
+          className="py-4 px-6  text-white   text-xl border rounded-full " style={{background: "rgba(226, 112, 61, 1)"
+        }}>About us
 
               </button>
       </div>
