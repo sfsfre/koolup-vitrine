@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="items-center justify-normal">
+      <body className="w-full flex flex-col items-center justify-normal gap-5">
       <Navbar/>
         {children}
         <Footer/>

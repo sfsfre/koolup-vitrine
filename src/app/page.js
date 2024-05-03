@@ -13,16 +13,16 @@ import Subscribe from './component/Subscribe';
 
 const Page = () => {
   return (
-    <div>
+    <div className='w-full flex flex-col items-center justify-normal gap-3'>
       <HeadingPage />
       <Rectangle/>
       <Texte/>
-       <Box/>
+       {/* <Box/>
        <Restaurants/>
        <Delivery/>
        <Telephone/>
-       <Client/>
-   <Subscribe/>
+       <Client/> */}
+   {/* <Subscribe/> */}
 
     </div>
   );

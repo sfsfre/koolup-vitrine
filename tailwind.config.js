@@ -10,7 +10,12 @@ module.exports = {
       textColor: {
         'rgba52-23-72-1': 'rgba(52, 23, 72, 1)',
       },
+      fontFamily: {
+        'Mastery-Kingdom': ['Mastery Kingdom', 'sans-serif'],
+        // Ajoutez d'autres polices personnalisées ici si nécessaire
+      },
     }
+    
   },
   plugins: [],
 };

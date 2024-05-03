@@ -2,17 +2,21 @@ import React from 'react';
 
 const Texte = () => {
   return (
-    <div className="flex flex-col lg:flex-row p-20">
+    <div className="flex flex-col lg:flex-row    p-32 ml-6">
       {/* Première partie */}
-      <div className=" lg:w-1/2  flex flex-col justify-center items-center" >
-        <h1 className="text-4xl lg:text-5xl font-bold mb-4 text-center">We are more than <br/>multiple services</h1>
-        <p className=" text-black text-4lg lg:text-2xl" style={{marginTop:'4%'}}>
-    Lorem ipsum site amet consectetur. Curbitur<br />
-    sit ipsum  neque scelerisque adipicing fringilla.<br />
-    Est amet sapien cursus morbi non netus.
-  </p>
+      <div className=" lg:w-1/2  flex flex-col justify-center items-start gap-4" >
+      <h1 className="text-5xl font-normal font-Mastery-Kingdom  text-left">
+  We are more than multiple services
+</h1>
+
+<p className="text-black text-lg lg:text-2xl  py-7 font-normal">
+  Lorem ipsum sit amet consectetur. Curabitur <br />
+  sit ipsum neque scelerisque adipiscing fringilla. <br />
+  Est amet sapien cursus morbi non netus.
+</p>
+
   <button
-          className="py-4 px-6 bg-orange-500 text-white   text-xl " style={{borderRadius:'25px'}}>About us
+          className="py-4 px-6  text-white   text-xl " style={{borderRadius:'25px'}}>About us
 
               </button>
       </div>
